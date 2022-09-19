@@ -1,0 +1,60 @@
+@import './base';
+
+h1 {
+  color: $secondary;
+  background-color: $primary;
+}
+
+.read-the-docs {
+  background-color: $blue;
+  padding: 10px;
+  p {
+    color: $secondary;
+    font-size: 18px;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em $blue);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em $lightblue);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: $gray;
+}
